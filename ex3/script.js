@@ -7,8 +7,9 @@ function ndate() {
     let date = new Date ()
 
     let jdate = new Date (date.getTime() + (80000*1000*60*60))
-    mdate.textContent = (jdate.getHours() +":"+ jdate.getMinutes() +":"+ jdate.getSeconds() + " Année " + jdate.getFullYear()
-     + " " + month[jdate.getMonth()] + " Jour " + jdate.getDate())
+    mdate.textContent = (jdate.getHours() +":"+ jdate.getMinutes() +":"+ jdate.getSeconds() + " " + jdate.getDate() 
+    + "/" + month[jdate.getMonth()] + "/" + jdate.getFullYear() )
+
 
     setTimeout(ndate, 1000)
 }
